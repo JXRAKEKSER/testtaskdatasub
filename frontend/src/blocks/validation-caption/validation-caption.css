@@ -1,0 +1,4 @@
+.validation-caption {
+ display: flex;
+ flex-direction: column;
+}

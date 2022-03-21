@@ -1,0 +1,11 @@
+.date-code-zone {
+  display: grid;
+  width: 100%;
+  padding: 20px;
+  grid-template-columns: repeat(2, minmax(fit-content, max-content));
+  grid-template-rows: repeat(2, minmax(fit-content, max-content));
+  grid-auto-rows: max-content;
+  grid-template-areas:
+  "exptext . . cvctext"
+  "monthinput separator yearinput cvcinput";
+}

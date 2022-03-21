@@ -6,7 +6,7 @@ class ValidationError extends Error {
   }
 
   sendError(res) {
-    return res.json({ message: this.message });
+    return res.status(this.statusCode).json({ message: this.message });
   }
 }
 

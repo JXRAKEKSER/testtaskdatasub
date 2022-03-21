@@ -1,0 +1,9 @@
+.payment__submit-button {
+  margin: 20px 0 0 0;
+  min-width: 200px;
+  width: fit-content;
+  height: 80px;
+  border-radius: 10px;
+  font-size: 24px;
+  line-height: 24px;
+}

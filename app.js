@@ -2,14 +2,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
 const { PORT } = require('./config');
-const corsHeandler = require('./middlewares/cors.middleware');
+const corsHandler = require('./middlewares/cors.middleware');
 const vendorErorsHandler = require('./middlewares/vendorErrors.middleware');
 const paymentRouter = require('./routes/payment.router');
 
 const app = express();
 
 app.use(express.json());
-app.use(corsHeandler);
+app.use(corsHandler);
 
 app.use('/payment', paymentRouter);
 

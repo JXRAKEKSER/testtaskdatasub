@@ -1,0 +1,4 @@
+.date-code-zone__yearinput {
+  grid-area: yearinput;
+  width: 100px;
+}

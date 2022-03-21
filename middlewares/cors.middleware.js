@@ -3,9 +3,9 @@ const accessAllowList = [
   'http://localhost:3000',
 ];
 
-const DEFAULT_EXTENDED_CORS_METHODS = ['HEAD', 'GET', 'POST', 'PUT', 'PATCH', 'DELETE'];
+const DEFAULT_EXTENDED_CORS_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
 
-const corsHeandler = (req, res, next) => {
+const corsHandler = (req, res, next) => {
   const { origin } = req.headers;
   const { method } = req;
   const requestHeaders = req.headers['access-control-request-headers'];
@@ -13,13 +13,13 @@ const corsHeandler = (req, res, next) => {
   if (!isAllowOrigin) {
     return res.end();
   }
-  res.header('access-allow-origin', origin);
+  res.header('Access-Control-Allow-Origin', origin);
   if (method === 'OPTIONS') {
-    res.header('access-allow-headers', requestHeaders);
-    res.header('access-allow-methods', DEFAULT_EXTENDED_CORS_METHODS);
-    res.end();
+    res.header('Access-Control-Allow-Headers', requestHeaders);
+    res.header('Access-Control-Allow-Methods', DEFAULT_EXTENDED_CORS_METHODS);
+    return res.end();
   }
   next();
 };
 
-module.exports = corsHeandler;
+module.exports = corsHandler;

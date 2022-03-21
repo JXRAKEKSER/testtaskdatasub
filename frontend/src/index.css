@@ -1,0 +1,34 @@
+@import url(./vendor/normalize.css);
+
+@import url(./blocks/page/page.css);
+
+/*Validation-caption*/
+@import url(./blocks/validation-caption/validation-caption.css);
+@import url(./blocks/validation-caption/_tooltip_small/validation-caption_tooltip_small.css);
+
+/*Caption*/
+@import url(./blocks/caption/caption.css);
+@import url(./blocks/caption/__text/caption__text.css);
+
+/*Form*/
+@import url(./blocks/form/form.css);
+@import url(./blocks/form/__input/form__input.css);
+@import url(./blocks/form/__controll/form__controll.css);
+
+
+/*Input*/
+@import url(./blocks/input/input.css);
+/*Date-code-zone*/
+@import url(./blocks/date-code-zone/date-code-zone.css);
+@import url(./blocks/date-code-zone/__labletext/date-code-zone__labletext.css);
+@import url(./blocks/date-code-zone/__labletext/_area/date-code-zone__labletext_area_exptext.css);
+@import url(./blocks/date-code-zone/__labletext/_area/date-code-zone__labletext_area_cvctext.css);
+@import url(./blocks/date-code-zone/__monthinput/date-code-zone__monthinput.css);
+@import url(./blocks/date-code-zone/__separator/date-code-zone__separator.css);
+@import url(./blocks/date-code-zone/__yearinput/date-code-zone__yearinput.css);
+@import url(./blocks/date-code-zone/__cvcinput/date-code-zone__cvcinput.css);
+/*Payment*/
+@import url(./blocks/payment/payment.css);
+@import url(./blocks/payment/__title/payment__title.css);
+@import url(./blocks/payment/__submit/payment__submit-button.css);
+@import url(./blocks/payment/__lable/payment__lable.css);

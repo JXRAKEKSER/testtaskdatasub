@@ -1,0 +1,5 @@
+.date-code-zone__monthinput {
+  grid-area: monthinput;
+  width: 100px;
+  position: relative;
+}
